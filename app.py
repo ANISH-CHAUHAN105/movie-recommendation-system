@@ -5,7 +5,7 @@ import requests
 
 st.header("Movie Recommender System")
 
-movies = pd.read_pickle("movie_list.pkl")
+movies = pd.read_pickle("movies.pkl")
 similarity = pickle.load(open("similarity.pkl", "rb"))
 
 TMDB_API_KEY = '32d521970ff7efd2cfdb42bb8b96b2e7'
