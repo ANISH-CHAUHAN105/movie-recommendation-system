@@ -8,7 +8,7 @@ st.header("Movie Recommender System")
 movies = pd.read_pickle("movie_list.pkl")
 similarity = pickle.load(open("similarity.pkl", "rb"))
 
-TMDB_API_KEY = 32d521970ff7efd2cfdb42bb8b96b2e7
+TMDB_API_KEY = '32d521970ff7efd2cfdb42bb8b96b2e7'
 
 def fetch_poster(movie_title):
     url = f"https://api.themoviedb.org/3/search/movie?api_key={TMDB_API_KEY}&query={movie_title}"
